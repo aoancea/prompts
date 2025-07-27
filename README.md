@@ -58,3 +58,6 @@ Produce high-quality, natural translations into both English and Romanian.
 The final output must include:
 - ✅ The full HTML Angular component/template with all static text replaced. Output all code, even the one that remains the same. Here we need the full and only the full template, with nothing missing. I say again, nothing missing.
 - 🌍 Translation for both en an ro languages including keys and translations in json format
+
+
+Below is the Angular HTML/Template code base:
