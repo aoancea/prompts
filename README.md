@@ -5,23 +5,22 @@ You are working with an Angular codebase that uses the Transloco library for int
 
 Your task is to:
 
-1. Scan Angular HTML/Template code (especially in .html or inline templates inside .ts files).
+1. Scan Angular HTML/Template code provided at the end of this prompt
 
 2. Extract all static text content that is hardcoded and not already wrapped in a translation key (i.e., not already piped with | transloco).
 
 3. For each such static text:
-a. Create a corresponding translation key, following the format: BookTickets_<PagePrefix>_<Description>. The page prefix can be Event, Billing, Confirmation, etc.
+a. Create a corresponding translation key, following the format: Section_<PagePrefix>_<Description>. The page prefix can be User, Billing, Confirmation, etc.
 b. Provide the English and Romanian translation for the string.
-c. Add the new key-value pairs into two translation JSON objects: en.json and ro.json.
+c. Create a json for ro and for en translations with the translation keys and their coresponding translations
 
 4. Replace the hardcoded static string in the original Angular template with the corresponding translation key using the {{ 'key' | transloco }} syntax.
 
 5. Finally, output:
-a. The updated Angular template with all replacements done.
-b. The translation key table (Original Text → Key → English → Romanian).
-c. The generated en.json and ro.json objects only for the new keys.
+a. Translations in both english (en) an romanian(ro) languages with their corresponding keys in json format
+b. The updated html Angular template with all replacements done. Provide the whole html without any code missing
 
-6. Do not skip any parts of the content—ensure all UI labels, headings, paragraph content, buttons, checkboxes, tooltips, and error messages are included.
+6. Do not skip any parts of the html content. Ensure all UI labels, headings, paragraph content, buttons, checkboxes, tooltips, and error messages are included.
 
 7. If a dynamic value is included `like Participant {{ i + 1 }})`, keep the dynamic expression intact while wrapping the static part in the translation key.
 
@@ -57,6 +56,5 @@ Ensure complete coverage of:
 Produce high-quality, natural translations into both English and Romanian.
 
 The final output must include:
-- ✅ A full Angular component/template with all static text replaced.
-- 🌍 en.json and ro.json translation files (only for the new keys).
-- 🧾 A table mapping: Original Text → Translation Key → English → Romanian.
+- ✅ The full HTML Angular component/template with all static text replaced. Output all code, even the one that remains the same. Here we need the full and only the full template, with nothing missing. I say again, nothing missing.
+- 🌍 Translation for both en an ro languages including keys and translations in json format
