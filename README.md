@@ -62,3 +62,10 @@ The final output must include:
 
 
 Below is the Angular HTML/Template code base:
+
+
+#### If the full code base is not provided, use the following prompt
+```
+it's not the full html that was provided
+output the full html
+```
